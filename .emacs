@@ -15,6 +15,11 @@
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get/")
 (require 'el-get)
 
+;;chrome-emacs plugin
+(add-to-list 'load-path "~/.emacs.d/")
+(require 'edit-server)
+(edit-server-start)
+
 ;;auto-complete自动补全
 (add-to-list 'load-path "~/.emacs.d/el-get/auto-complete/")
 (require 'auto-complete-config)
