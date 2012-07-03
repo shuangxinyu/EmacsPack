@@ -114,7 +114,8 @@
 (add-hook 'matlab-mode-hook 'my-matlab-mode-hook) 
 
 ;; Load CEDET
-(load-file "~/.emacs.d/cedet-1.0/common/cedet.el")
+;(load-file "~/.emacs.d/cedet-1.0/common/cedet.el")
+(semantic-mode 1)
 ;; Enable EDE (Project Management) features
 (global-ede-mode 1)
 ;; speedbar的快捷键
