@@ -120,6 +120,7 @@
 (global-ede-mode 1)
 ;; speedbar的快捷键
 (global-set-key [(f4)]'speedbar-get-focus)
+
 ;;ecb
 (add-to-list 'load-path "~/.emacs.d/ecb-2.40")
 ;(require 'ecb)
@@ -186,4 +187,3 @@
 ( global-set-key [ M-right ] 'windmove-right ) ; move to right window
 ( global-set-key [ M-up ] 'windmove-up ) ; move to upper window
 ( global-set-key [ M-down ] 'windmove-down ) ; move to downer window
-
