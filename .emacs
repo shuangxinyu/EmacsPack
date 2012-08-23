@@ -1,3 +1,11 @@
+;;In System $HOME there is a file named '.emacs' which contains'(load-file "D:/emacs-23.3/.emacs")'
+(setenv "HOME" "D:/emacs-23.3")
+(setenv "PATH" "D:/emacs-23.3")
+;;set the default file path
+(setq default-directory "~/")
+;;try to improve slow performance on windows.
+(setq w32-get-true-file-attributes nil)
+
 (custom-set-variables
   ;; custom-set-variables was added by Custom.
   ;; If you edit it by hand, you could mess it up, so be careful.
@@ -26,7 +34,7 @@
 (add-to-list 'ac-dictionary-directories "~/.emacsf.d/el-get/auto-complete/ac-dict")
 (ac-config-default)
 ;;not to use quick help
-(setq ac-use-quick-help nil)
+;(setq ac-use-quick-help nil)
 
 ;;git-emacs 
 (add-to-list 'load-path"~/.emacs.d/git-emacs")
@@ -49,9 +57,9 @@
 (add-to-list 'auto-mode-alist'("\\.thtml$" . django-html-mumamo-mode))
 
 ;;ibus 在ubuntu下的调用
-(add-to-list 'load-path "~/.emacs.d/ibus-el-0.2.1/")
-(require 'ibus)
-(add-hook 'after-init-hook 'ibus-mode-on)
+;(add-to-list 'load-path "~/.emacs.d/ibus-el-0.2.1/")
+;(require 'ibus)
+;(add-hook 'after-init-hook 'ibus-mode-on)
 ;;Ctrl+分号开关ibus输入法
 ;;(global-set-key [(control ?;)] 'ibus-toggle)
 
