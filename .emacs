@@ -23,7 +23,7 @@
 ;;auto-complete自动补全
 (add-to-list 'load-path "~/.emacs.d/el-get/auto-complete/")
 (require 'auto-complete-config)
-(add-to-list 'ac-dictionary-directories "~/.emacsf.d/el-get/auto-complete/ac-dict")
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/el-get/auto-complete/ac-dict")
 (ac-config-default)
 ;;not to use quick help
 (setq ac-use-quick-help nil)
