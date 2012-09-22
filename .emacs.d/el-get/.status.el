@@ -1,1 +1,0 @@
-(:el-get "installed" :auto-complete "installed" :xml-rpc-el "required" :muse "required" :nxhtml "installed" :color-theme "required" :js2-mode "installed" :ecb "required" :cedet "required")
