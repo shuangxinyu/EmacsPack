@@ -59,6 +59,7 @@
 ;; 字体设置 
 ;;(set-default-font "YaHeiConsolas")
 ;;显示行号
+(add-to-list 'load-path "~/.emacs.d/")
 (require 'linum)
 (setq linum-format "%3d")
 (add-hook 'find-file-hooks(lambda()(linum-mode 1)));;对所有文件生效
