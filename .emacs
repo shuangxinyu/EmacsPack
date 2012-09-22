@@ -15,7 +15,7 @@
 ;;auto-complete自动补全
 (add-to-list 'load-path "~/.emacs.d/auto-complete/")
 (require 'auto-complete-config)
-(add-to-list 'ac-dictionary-directories "~/.emacsf.d/auto-complete/ac-dict")
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/auto-complete/ac-dict")
 (ac-config-default)
 ;;not to use quick help
 (setq ac-use-quick-help nil)
@@ -75,7 +75,7 @@
 	        '("GNU Emacs ["(buffer-file-name" %f \] "
 							         (dired-directory dired-directory "%b \]"))))
 ;;选择方向切换窗口
-( global-set-key [ M-left ] 'windmove-left ) ; move to left windnow
-( global-set-key [ M-right ] 'windmove-right ) ; move to right window
-( global-set-key [ M-up ] 'windmove-up ) ; move to upper window
-( global-set-key [ M-down ] 'windmove-down ) ; move to downer window
+( global-set-key [(meta left)] 'windmove-left ) ; move to left windnow
+( global-set-key [(meta right)] 'windmove-right ) ; move to right window
+( global-set-key [(meta up)] 'windmove-up ) ; move to upper window
+( global-set-key [(meta down)] 'windmove-down ) ; move to downer window
