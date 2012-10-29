@@ -1,4 +1,3 @@
-;;In System $HOME there is a file named '.emacs' which contains'(load-file "D:/emacs-23.3/.emacs")'
 (setenv "HOME" "D:/emacs-23.3")
 (setenv "PATH" "D:/emacs-23.3")
 ;;set the default file path
@@ -67,7 +66,8 @@
 (add-to-list 'load-path "~/.emacs.d/el-get/")
 (require 'tabbar)
 (tabbar-mode t)
-(global-set-key [C-S-iso-lefttab]' tabbar-backward)
+;(global-set-key [C-S-iso-lefttab]' tabbar-backward)
+(global-set-key (kbd "<S-tab>")' tabbar-backward)
 (global-set-key (kbd "<C-tab>")' tabbar-forward)
 
 ;;Icicles
