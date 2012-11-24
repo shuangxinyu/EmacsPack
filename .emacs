@@ -27,6 +27,8 @@
 (ac-config-default)
 ;;not to use quick help
 (setq ac-use-quick-help nil)
+;;enable it globally
+(global-auto-complete-mode t)
 
 ;;git-emacs 
 (add-to-list 'load-path"~/.emacs.d/git-emacs")
