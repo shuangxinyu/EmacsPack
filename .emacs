@@ -29,6 +29,8 @@
 (setq ac-use-quick-help nil)
 ;;enable it globally
 (global-auto-complete-mode t)
+;Global mode is enabled only with those major modes that are included in the ac-modes variable
+(add-to-list 'ac-modes 'sql-mode)
 
 ;;git-emacs 
 (add-to-list 'load-path"~/.emacs.d/git-emacs")
