@@ -173,6 +173,8 @@
 ;;打开图片显示功能
 (auto-image-file-mode t)
 
+;; 设置写入文件编码
+(setq default-buffer-file-coding-system 'utf-8-unix)
 ;; 字体设置 
 ;;(set-default-font "YaHeiConsolas")
 ;;显示行号
